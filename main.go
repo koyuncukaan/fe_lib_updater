@@ -23,7 +23,6 @@ func printWorkDir() {
 		fmt.Println(err)
 	}
 	for _, entry := range entries {
-		fmt.Println(entry.Name()[:4])
 		if entry.IsDir() && entry.Name()[:7] == projectPrefix {
 			fmt.Println(entry)
 		}
